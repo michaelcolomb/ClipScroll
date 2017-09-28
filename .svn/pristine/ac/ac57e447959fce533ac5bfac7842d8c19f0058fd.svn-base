@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_clips" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        app:layout_anchor="@id/rv_clips"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_add_white_24px"
+        app:fabSize="normal"
+        android:elevation="6dp"
+        app:borderWidth="0dp"
+        android:onClick="launchSubmit" />
+
+</android.support.design.widget.CoordinatorLayout>

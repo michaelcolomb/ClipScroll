@@ -1,0 +1,286 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.Manifest;
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.util.Log;
+import android.widget.MediaController;
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * This class runs the main activity for the application. It coordinates the recycler view
+ * with Firebase Database and Storage to retrieve submitted videos, while allowing users
+ * to upload videos and include a title.
+ * @author colomb2
+ */
+public class MainActivity extends AppCompatActivity {
+
+    private static final int MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE = 1;
+    private static final int MEDIA_CODE = 2;
+    private static final long TWO_SECONDS = 2000;
+    protected static final String CLIP_ADDRESS = "colomb2/clips";
+    protected static final String VIDEO_FILTER = "video/*";
+    protected static final String VIDEO_DIRECTORY = "video/";
+    protected static final String TEMP_VIDEO_NAME = "tempVideo";
+    protected static final String MP4_FORMAT = "mp4";
+
+    EditText mTitleField;
+    RecyclerView mRecyclerView;
+    private FirebaseDatabase mDatabase;
+    private DatabaseReference mEntriesReference;
+    private StorageReference mVideoStorageRef;
+    final Context mContext = this;
+
+    /**
+     * This method is called when the main activity is created. It asks for permission
+     * if required. It sets up the firebase recycler view to retrieve and display videos
+     * from each stored clip.
+     * @param savedInstanceState past state of live main activity
+     */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mDatabase = FirebaseDatabase.getInstance();
+        mEntriesReference = mDatabase.getReference(CLIP_ADDRESS);
+        mVideoStorageRef = FirebaseStorage.getInstance().getReference();
+
+        mTitleField = (EditText) findViewById(R.id.title);
+
+        checkPermissions();
+
+        final FirebaseRecyclerAdapter<Clip, ClipViewHolder> firebaseRecyclerAdapter;
+        firebaseRecyclerAdapter = new ClipAdapter(Clip.class, R.layout.lecture_list_item,
+                ClipViewHolder.class, mEntriesReference);
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.rv_lectures);
+        mRecyclerView.setHasFixedSize(false);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.setAdapter(firebaseRecyclerAdapter);
+    }
+
+    /**
+     * This helper function checks if the READ_EXTERNAL_STORAGE permission is not approved
+     * yet. If not, it asks requests permission.
+     * https://developer.android.com/training/permissions/requesting.html
+     */
+    private void checkPermissions() {
+        if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE);
+        }
+    }
+
+    /**
+     * This method is activated after the user has inputted their permissions. If permission
+     * was not granted, an informational toast is displayed and the app closes.
+     * @param requestCode int identifier for storage permission
+     * @param permissions list of permissions with IDs
+     * @param grantResults list of whether permissions have been granted
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        if (requestCode == MY_PERMISSIONS_REQUEST_READ_EXTERNAL_STORAGE) {
+            if (grantResults.length <= 0
+                    || grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, getString(R.string.deniedPermissions), Toast.LENGTH_LONG);
+                try {
+                    Thread.sleep(TWO_SECONDS);
+                } catch (InterruptedException e) {
+                    System.exit(1);
+                }
+                System.exit(0);
+            }
+        }
+    }
+
+    /**
+     * Ask the user for a video to store. A new window will be launched for the user
+     * to choose from their media gallery, or other location of their choosing.
+     * http://stackoverflow.com/questions/4922037/android-let-user-pick-image-or-video-from-gallery
+     * @param view
+     */
+    public void retrieveMedia(View view) {
+        Intent pickIntent = new Intent();
+        pickIntent.setAction(Intent.ACTION_GET_CONTENT);
+        pickIntent.setType(VIDEO_FILTER);
+        Intent videoIntent = Intent.createChooser(pickIntent, getString(R.string.pickVideo));
+        startActivityForResult(videoIntent, MEDIA_CODE);
+    }
+
+    /**
+     * This method is activated after the user has selected a video with requestCode for
+     * media. This method uses the data from the intent, which includes the video file, and
+     * the text stored in the input EditText. It stores the Clip information in Firebase real-time
+     * database and the actual video file in Firebase storage.
+     * @param requestCode id code for request
+     * @param resultCode status id from activity
+     * @param data container containing data from activity
+     */
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK && requestCode == MEDIA_CODE) {
+
+            final String title = mTitleField.getText().toString();
+            Uri uri = data.getData();
+
+            StorageReference videoRef = mVideoStorageRef.child(VIDEO_DIRECTORY + title);
+
+            videoRef.putFile(uri)
+                    .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            // Get a URL to the uploaded content
+                            String downloadUrl = taskSnapshot.getDownloadUrl().toString();
+                            Clip addedClip = new Clip(title, downloadUrl);
+
+                            mEntriesReference.push().setValue(addedClip);
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception exception) {
+                            Toast.makeText(mContext, getString(R.string.failedToProcessVideo),
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    });
+        }
+    }
+
+    /**
+     * This class defines a FirebaseRecyclerAdapter. It sets up the recycler view such that
+     * each list item displays the title of the clip and video. Upon clicking the item, the
+     * video will start.
+     */
+    public class ClipAdapter extends FirebaseRecyclerAdapter<Clip, MainActivity.ClipViewHolder> {
+
+
+        MediaController mediaController;
+
+        /**
+         * This constructor is necessary to set up the adapter. Its only function is to call
+         * the constructor of the FirebaseRecyclerAdapter and to store the parent context.
+         * @param modelClass class to parse stored data into
+         * @param modelLayout id of list item layout
+         * @param viewHolderClass class of view holder
+         * @param ref database reference
+         */
+        public ClipAdapter(Class<Clip> modelClass, int modelLayout,
+                           Class<MainActivity.ClipViewHolder> viewHolderClass, Query ref) {
+            super(modelClass, modelLayout, viewHolderClass, ref);
+            mediaController = new MediaController(mContext);
+        }
+
+        /**
+         * This function populates the view holder for the recycler view item. It fetches
+         * the holder's corresponding video from Firebase Storage. It sets an OnClickListener
+         * on the holder so that the user can play a video by clicking on it.
+         * @param viewHolder for the corresponding recycler view item
+         * @param clip that contains the title and url of the necessary data
+         * @param position in the recycler view (int)
+         */
+        @Override
+        protected void populateViewHolder(final MainActivity.ClipViewHolder viewHolder,
+                                          Clip clip, int position) {
+            final Context context = viewHolder.mContainerView.getContext();
+            viewHolder.mTitleView.setText(clip.getTitle());
+            final File localFile;
+
+            try {
+                localFile = File.createTempFile(TEMP_VIDEO_NAME, MP4_FORMAT);
+            } catch (IOException e) {
+                Toast.makeText(context, getString(R.string.failedToFindVideo),
+                        Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            StorageReference speciciedVideoRef = FirebaseStorage.getInstance()
+                    .getReferenceFromUrl(clip.getDownloadUrl());
+
+            speciciedVideoRef.getFile(localFile)
+                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                            viewHolder.mContainerView
+                                    .setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            playVideo(mediaController, viewHolder.mClip,
+                                                    localFile.getPath());
+                                        }
+                                    });
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    Toast.makeText(context, getString(R.string.failedToRetrieveVideo) +
+                            "\n" + exception.getMessage(), Toast.LENGTH_LONG).show();
+                }
+            });
+
+        }
+
+        /**
+         * This helper function starts a video playing on the mediaController.
+         * @param mediaController controller to play video
+         * @param videoView view to play video on
+         * @param filePath path to temporary video file.
+         */
+        private void playVideo(MediaController mediaController,
+                               VideoView videoView, String filePath) {
+            videoView.setVideoURI(Uri.parse(filePath));
+            videoView.setMediaController(mediaController);
+            videoView.requestFocus();
+            videoView.start();
+        }
+    }
+
+    /**
+     * This is the holder for lecture list items used in the firebase recyler view.
+     */
+    public static class ClipViewHolder extends RecyclerView.ViewHolder {
+
+        public View mContainerView;
+        public TextView mTitleView;
+        public VideoView mClip;
+
+        /**
+         * This constructor uses the overall list item view to instantiate the fields.
+         * @param itemView containing view of the holder
+         */
+        public ClipViewHolder(View itemView) {
+            super(itemView);
+            mContainerView = itemView;
+            mTitleView = (TextView) itemView.findViewById(R.id.lecture_list_title);
+            mClip = (VideoView) itemView.findViewById(R.id.clip);
+        }
+    }
+
+}

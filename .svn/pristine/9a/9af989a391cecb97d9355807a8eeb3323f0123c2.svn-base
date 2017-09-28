@@ -1,0 +1,151 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.vision.text.Text;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Query;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * This class defines a FirebaseRecyclerAdapter. It sets up the recycler view such that
+ * each list item displays the title of the clip and video. Upon clicking the item, the
+ * video will start.
+ */
+public class ClipAdapter extends FirebaseRecyclerAdapter<Clip, ClipAdapter.ClipViewHolder> {
+
+    private DatabaseReference mEntriesReference;
+
+    private Drawable upSelected;
+    private Drawable upUnselected;
+    private Drawable downSelected;
+    private Drawable downUnselected;
+
+    /**
+     * This constructor is necessary to set up the adapter. Its only function is to call
+     * the constructor of the FirebaseRecyclerAdapter and to store the parent context.
+     * @param modelClass class to parse stored data into
+     * @param modelLayout id of list item layout
+     * @param viewHolderClass class of view holder
+     * @param ref database reference
+     */
+    public ClipAdapter(Context context,
+                       Class<Clip> modelClass, int modelLayout,
+                       Class<ClipViewHolder> viewHolderClass, Query ref) {
+        super(modelClass, modelLayout, viewHolderClass, ref);
+
+        upSelected = context.getDrawable(R.drawable.ic_up_selected);
+        upUnselected = context.getDrawable(R.drawable.ic_up_unselected);
+        downSelected = context.getDrawable(R.drawable.ic_down_selected);
+        downUnselected = context.getDrawable(R.drawable.ic_down_unselected);
+
+        this.mEntriesReference = (DatabaseReference) ref;
+    }
+
+    /**
+     * This function populates the view holder for the recycler view item. It fetches
+     * the holder's corresponding video from Firebase Storage. It sets an OnClickListener
+     * on the holder so that the user can play a video by clicking on it.
+     * @param viewHolder for the corresponding recycler view item
+     * @param clip that contains the title and url of the necessary data
+     * @param position in the recycler view (int)
+     */
+    @Override
+    protected void populateViewHolder(final ClipViewHolder viewHolder,
+                                      Clip clip, int position) {
+        final Context context = viewHolder.mContainerView.getContext();
+        viewHolder.mTitleView.setText(clip.getTitle());
+        ClipPlayer.configureVideo(context, viewHolder.mClip, clip.getDownloadUrl());
+
+        viewHolder.mUpvote.setOnClickListener(new voteClicked(viewHolder));
+        viewHolder.mDownvote.setOnClickListener(new voteClicked(viewHolder));
+    }
+
+    /**
+     * This is the holder for clip list items used in the firebase recyler view.
+     */
+    public static class ClipViewHolder extends RecyclerView.ViewHolder {
+
+        public View mContainerView;
+        public TextView mTitleView;
+        public VideoView mClip;
+        public ImageView mUpvote;
+        public ImageView mDownvote;
+        public TextView mVoteCount;
+
+        /**
+         * This constructor uses the overall list item view to instantiate the fields.
+         * @param itemView containing view of the holder
+         */
+        public ClipViewHolder(View itemView) {
+            super(itemView);
+
+            mContainerView = itemView;
+            mTitleView = (TextView) itemView.findViewById(R.id.clip_list_title);
+            mClip = (VideoView) itemView.findViewById(R.id.clip);
+            mUpvote = (ImageView) itemView.findViewById(R.id.upvote);
+            mDownvote = (ImageView) itemView.findViewById(R.id.downvote);
+            mVoteCount = (TextView) itemView.findViewById(R.id.vote_count);
+        }
+    }
+
+    private class voteClicked implements View.OnClickListener {
+
+        private ClipViewHolder viewHolder;
+
+        public voteClicked(ClipViewHolder viewHolder) {
+            this.viewHolder = viewHolder;
+        }
+
+        @Override
+        public void onClick(View v) {
+            if (v.getId() == R.id.upvote) {
+                if (viewHolder.mUpvote.getTag().equals("unselected")) {
+                    viewHolder.mUpvote.setImageDrawable(upSelected);
+                    viewHolder.mUpvote.setTag("selected");
+                    viewHolder.mDownvote.setImageDrawable(downUnselected);
+                    viewHolder.mDownvote.setTag("unselected");
+
+                } else {
+                    viewHolder.mUpvote.setImageDrawable(upUnselected);
+                    viewHolder.mUpvote.setTag("unselected");
+                }
+            } else if (v.getId() == R.id.downvote) {
+                if (viewHolder.mDownvote.getTag().equals("unselected")) {
+                    viewHolder.mDownvote.setImageDrawable(downSelected);
+                    viewHolder.mDownvote.setTag("selected");
+                    viewHolder.mUpvote.setImageDrawable(upUnselected);
+                    viewHolder.mUpvote.setTag("unselected");
+                } else {
+                    viewHolder.mDownvote.setImageDrawable(downUnselected);
+                    viewHolder.mDownvote.setTag("unselected");
+                }
+            }
+        }
+    }
+}
+
+
+

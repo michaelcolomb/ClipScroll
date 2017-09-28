@@ -1,0 +1,160 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.support.annotation.NonNull;
+import android.util.Log;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.fail;
+
+/**
+ * This class tests the ability of user to like a video. Since all users are anonymous, the app
+ * will use a unique identifier to users known as the instance id. For the purpose of testing,
+ * two random strings are used as instance ids of supposed two different users.
+ *
+ * @author colomb2
+ */
+
+public class UpvoteTest {
+
+    private FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference mEntriesReference = mDatabase.getReference(MainActivity.CLIP_ADDRESS);
+
+    private final String WAITING_ERROR_MESSAGE = "Waiting for databse failed";
+    private final String TEST_CLIP_TITLE = "Upvote Video";
+    private final String TEST_CLIP_URL = "Download URL Example2";
+
+    // store id of newly added video (passing causes creation order problems)
+    private String testClipId;
+
+    // supposed instance id of user
+    private final String instanceId1 = "asdfj24fj91349fjjsdlf249";
+    private final String instanceId2 = "gjljfflaksjfoghasldkfjad";
+
+    /**
+     * This method tests adding a like by first creating a clip and then coordinating the
+     * addition instanceId1 to its likes value. It leads to the assertion that the clip
+     * is liked by instanceId1 but not instanceId2.
+     * @throws Exception if the video is not liked by instanceId1 or liked by instanceid2
+     */
+    @Test
+    public void testUpvote() throws Exception {
+        mEntriesReference.limitToLast(1).addChildEventListener(new ClipListener());
+
+        final CountDownLatch writeSignal = new CountDownLatch(1);
+        Clip testClip = new Clip(TEST_CLIP_TITLE, TEST_CLIP_URL);
+
+        mEntriesReference.push().setValue(testClip)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    /**
+                     * Count down the latch so that the function can continue
+                     * @param task task reference - housekeeping
+                     */
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        writeSignal.countDown();
+                    }
+                });
+
+        writeSignal.await(10, TimeUnit.SECONDS);
+        likeClip();
+    }
+
+    /**
+     * This helper method updates the likes value of the clip. It adds the listener
+     * so that retrieving who has liked the clip is also tested.
+     */
+    private void likeClip() {
+        Map<String, Object> updatedLikes = new HashMap();
+        updatedLikes.put(instanceId1, 1);
+
+        DatabaseReference clipReference = mEntriesReference.child(testClipId);
+        DatabaseReference likeReference = clipReference.child("/likes");
+
+        likeReference.addValueEventListener(new LikeListener());
+
+        likeReference.updateChildren(updatedLikes);
+    }
+
+    /**
+     * This listener class stores the id of the newly created video so that it can be used
+     * to reference likes.
+     */
+    public class ClipListener implements ChildEventListener {
+        /**
+         * When the child clip is added, store the id for use in accessing the clip by id for
+         * liking.
+         * @param dataSnapshot      data container that stores the clip and relevant information
+         * @param previousChildName of the child
+         */
+        @Override
+        public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName) {
+            String clipId = dataSnapshot.getKey();
+            testClipId = clipId;
+        }
+
+        @Override
+        public void onChildChanged(DataSnapshot snapshot, String previousChildName) {
+        }
+
+        @Override
+        public void onChildMoved(DataSnapshot snapshot, String previousChildName) {
+        }
+
+        @Override
+        public void onChildRemoved(DataSnapshot snapshot) {
+        }
+
+        @Override
+        public void onCancelled(DatabaseError error) {
+        }
+    }
+
+    /**
+     * This listener retrieves the new clip with the likes of interest. It makes the assertions
+     * that the clip contains a like from the instance id that it should (instanceId1) and does not
+     * contain the instance id that it should not (instanceId2).
+     */
+    public class LikeListener implements ValueEventListener {
+        /**
+         * Assert that the likes value contains the added user (instanceId1) and not the
+         * user that was not added (instanceId2). Wait before making the assertions to ensure the
+         * database calls have been completed.
+         * @param dataSnapshot data container that stores the likes value and relevant information
+         */
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                fail(WAITING_ERROR_MESSAGE);
+            }
+
+            Boolean containsId1 = dataSnapshot.hasChild(instanceId1);
+            assertTrue(containsId1);
+
+            Boolean containId2 = dataSnapshot.hasChild(instanceId2);
+            assertFalse(containId2);
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+        }
+    }
+}

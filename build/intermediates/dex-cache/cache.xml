@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_4bba3f636a743fcffbb49e68182ba208131dcba9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/8dfbb969675a57b068f41abbf10db4f64ee62120/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_0e685ad6a3af4e76e4e3ff756570f483d3d918a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/86e3e9901f017e80468be5c35c86d97f2df60c8c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e3efc6cbe1d0e6e4da767c6e036b52d7375a158/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/0cedf65c7ff8c6926850318cc503e7b0b7077374/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_0b405d03928fe589c056fdcd33e0d9058cdb75f4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/cf63da82c4cf72d62b513125f943d3a52f090339/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_ac514f9200a54ea32c4c561767b746424ff44294/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/86e3e9901f017e80468be5c35c86d97f2df60c8c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_4e3efc6cbe1d0e6e4da767c6e036b52d7375a158.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/a2a6d58d8653d6be6128fefff3f7620eff83a1db/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_f80bfaafdeca6d31bc36b40939819bdf9f901761.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/8f66d228482d819f00e9cbd1c7b5b9d5128f0235/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b0ac55c6af0bd0d9756dbe62d5b07aa764e8aeb3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/a6b77f289d109e30ee4dbdaa850cd97f66438767/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_73c4887c20d69ea8a843afa585df171493f48fc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/3c0ef5a0cbcfe9b4fa41ba17cfca4be8d8bfb018/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e56f31b23ddb067f95f01255295167db7c798612">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_49a29bb5d59d6ee56391bbe008566aa808530589.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/a6b77f289d109e30ee4dbdaa850cd97f66438767/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_73c4887c20d69ea8a843afa585df171493f48fc2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/3c0ef5a0cbcfe9b4fa41ba17cfca4be8d8bfb018/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e56f31b23ddb067f95f01255295167db7c798612">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49a29bb5d59d6ee56391bbe008566aa808530589/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/a2a6d58d8653d6be6128fefff3f7620eff83a1db/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f8f779a22cbb4c4d0759467a4f1011bb5252970">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f80bfaafdeca6d31bc36b40939819bdf9f901761/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/49e2988c006c6d22a5c9c8fbddffe32b495ddf74/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_100d29bdb28321b33fd30097225959635502dad7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/fc2346dd5d1f6f2555da91c3182e54af79b756b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_2ac1f1d62520abd6815633293fa1ce277a09bc89.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/49e2988c006c6d22a5c9c8fbddffe32b495ddf74/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_100d29bdb28321b33fd30097225959635502dad7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/0cedf65c7ff8c6926850318cc503e7b0b7077374/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0b405d03928fe589c056fdcd33e0d9058cdb75f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/fc2346dd5d1f6f2555da91c3182e54af79b756b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2ac1f1d62520abd6815633293fa1ce277a09bc89/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/cf63da82c4cf72d62b513125f943d3a52f090339/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_ac514f9200a54ea32c4c561767b746424ff44294.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/8dfbb969675a57b068f41abbf10db4f64ee62120/output/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_0e685ad6a3af4e76e4e3ff756570f483d3d918a3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/203d72c597b95bed90e212364e466fa7a5293517/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3896b6064123e9ebb94eb2a0b63eaf773275eb33/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/eda3ea23372b1c299dfe9f6b2b74680856a1900c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_db2db0633a6678093c29385a0f0cb2d65b19c5f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/77c065eef5d6164d94797c8d8b35f04f7205e147/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_e34455087efba4822f19041ba548e6096ab1662a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/335f5576bd237d1b029b7b5f60b362a43172114d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_25a3e93fcf84200d9020360eb67ec64bb3aadd8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/ca070e1e3d650ccf4fd7ecd82106fc7def665d44/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7e655e4fd5d01177dfec3daadd938ce2d1f9b03">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bff55a8386216c8561052bcba6508c8e2ed8667a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/4ab28782bedba726ca3e42a9e292d64d4b480d2f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0b8e087da59c0b062c33f49a335e59f907086da2">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b473c5f37c05e34db762534efc1bb150e881cf93/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/fb2783d76bb1cdb27acac2a3c2d95f40d71fde41/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_1c0f75dc119861a6a41efbfa10b98b115c55cbbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/203d72c597b95bed90e212364e466fa7a5293517/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_3896b6064123e9ebb94eb2a0b63eaf773275eb33.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/8f66d228482d819f00e9cbd1c7b5b9d5128f0235/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b0ac55c6af0bd0d9756dbe62d5b07aa764e8aeb3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/ae46eb197e0db7d76ec02206005d901dad7c5c6e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3f8a5c101c8238dd8bf4dad3ac051ea99cc3e327/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/ca070e1e3d650ccf4fd7ecd82106fc7def665d44/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c7e655e4fd5d01177dfec3daadd938ce2d1f9b03">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_bff55a8386216c8561052bcba6508c8e2ed8667a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/fb2783d76bb1cdb27acac2a3c2d95f40d71fde41/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_1b2dd9a300fd5e3afa5f941e50b7df28296e6517.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/6b7aa898a6e87b0ae0d48647e3f2aecb69ab8ba2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4170a4f0e8b23ba066a433c03d6485477385c898/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/aebbb38046944ab4a6aef2bcad94dbf66284ccdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_6b26a23fa15dadfddd4e1ad3ab399f7f9b182e24.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/fb2783d76bb1cdb27acac2a3c2d95f40d71fde41/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_1c0f75dc119861a6a41efbfa10b98b115c55cbbc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/jsr305-2.0.1_0e6e991e47aa2d4f499f29b8fd87e1457f9c496d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/eda3ea23372b1c299dfe9f6b2b74680856a1900c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ec9104b53aee77dfcfd2fe1c4add23ff7c4df55f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_db2db0633a6678093c29385a0f0cb2d65b19c5f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/6b7aa898a6e87b0ae0d48647e3f2aecb69ab8ba2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_4170a4f0e8b23ba066a433c03d6485477385c898.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/aebbb38046944ab4a6aef2bcad94dbf66284ccdd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b26a23fa15dadfddd4e1ad3ab399f7f9b182e24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/245a41cfc79f6ccff7fa897acfc87f384cb169ab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bfda09f3b1cd7dbe01959a15a4fb3f73a31230b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/77c065eef5d6164d94797c8d8b35f04f7205e147/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e34455087efba4822f19041ba548e6096ab1662a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/gson-2.8.0_4bba3f636a743fcffbb49e68182ba208131dcba9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/c6c333791709eb7dafd6d8ea666eb95dcf418db7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_121bda0b2e6a8f9daad4e34a608d99f429583c88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/1e78548e368cb30b5128c85b1b048baf3eb5740d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_0785a94eebeafb7921c2e1cbf903a14005f7ca6c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/1e0595e6159b7153334f4d2d1f8070424c458daf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2278d49b8b2b804cafc796dae8d93e14ff26995f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_67c71fc8617ee85e8d49443972b94ecb535f8cb7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/09033db8312fe4b0243ea6aad0aaddd78fec956d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cef85cfc7df40e29fbea58844dd4c1e7d0b15542">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_61a72aa178fa26fa20ddb01e938cb42cd79f9617/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/1fc8aefd0c91c89e5f0635431e2ff44fb5845905/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_2a0d0eb0ed5d1a6340be48c6d02a55eb8d2e9f07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_67c71fc8617ee85e8d49443972b94ecb535f8cb7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/1e0595e6159b7153334f4d2d1f8070424c458daf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d358528c5a8731a6e19bca910cbb3fd755ee31">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_2278d49b8b2b804cafc796dae8d93e14ff26995f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/3530722adf358d609a29d537319638e56d2d59d7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_dde28bbf321038b1b6567cc51bdf2de1152883c3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/fb2783d76bb1cdb27acac2a3c2d95f40d71fde41/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1b2dd9a300fd5e3afa5f941e50b7df28296e6517/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_7b3becfb38bf398d2351c3149c065344494505c5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_7b3becfb38bf398d2351c3149c065344494505c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/ae46eb197e0db7d76ec02206005d901dad7c5c6e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a2537b11ae24b42172d34e2a613fc0b903c56158">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_3f8a5c101c8238dd8bf4dad3ac051ea99cc3e327.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/292281a92440cb78129c4ad37cdccbca1d3e6461/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9142834296b6987b04db629b831fb3f7a377f3e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/292281a92440cb78129c4ad37cdccbca1d3e6461/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_9142834296b6987b04db629b831fb3f7a377f3e4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/1e78548e368cb30b5128c85b1b048baf3eb5740d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="03df48d3713661d66ad024b1e406259a4c26fcac">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0785a94eebeafb7921c2e1cbf903a14005f7ca6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/1fc8aefd0c91c89e5f0635431e2ff44fb5845905/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a0d0eb0ed5d1a6340be48c6d02a55eb8d2e9f07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.1.1/67ff45d9ae02e583d0f9b3432a5ebbe05c30c966/javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/javawriter-2.1.1_5b2cb1a283423fdc94737522aec9b28e505afe49/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/88c74ec4a928dfa96dad26d53b5b8c0f3d479a0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d3035050a075484cbf2e33f1ce1f779bae4d451">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_0ea5c7fbc05359343013ac71794c1171c00c4cdd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/fc2346dd5d1f6f2555da91c3182e54af79b756b3/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_8acc4fbc9399e4fd484359e84dcec666a2420ad6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/a0bf1823c840e7e84c0490c4394cf5e5f7c50220/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0b53c4b90654b67ee3892a8e2e7b819c083ab7a6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_27168005495d95473b6fdee4ffb17525a240120a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/javax.annotation-api-1.2_408c1a3061b56f5ec513f6d1516590ac6f889e1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/88c74ec4a928dfa96dad26d53b5b8c0f3d479a0b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d3035050a075484cbf2e33f1ce1f779bae4d451">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ea5c7fbc05359343013ac71794c1171c00c4cdd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/2a5e4185b6eb3fbe2b13b198e75825bb745c527b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b543d8af6c01b1009973f3c013237425b17e1687/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/755f15dc46122d2931b4908e8c876f3d109a60ec/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b8b7b07946f064a2588cd26258a0c639b0c4f3bf.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/7e0af948b3c565b1fb9bd5686a076a572da153d2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8a0477a5e48239a3bb64e57bf8919eb6ba9b2c52/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/9d798997026fc43cac7e2243b85a7fb2320481e1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c21d818cfb8a1b5ddfba3fd545663898d96d874a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/f5b21019686a339de6cd8f94b4c9b4b3e28b590c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_3896f6f9450e36e5e89cdd7d1f8d6ba2d87efd7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/fc2346dd5d1f6f2555da91c3182e54af79b756b3/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8acc4fbc9399e4fd484359e84dcec666a2420ad6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/a0bf1823c840e7e84c0490c4394cf5e5f7c50220/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0b53c4b90654b67ee3892a8e2e7b819c083ab7a6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_27168005495d95473b6fdee4ffb17525a240120a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/3530722adf358d609a29d537319638e56d2d59d7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="679251204de40ace98776a6f4e3a649c27e3d89f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dde28bbf321038b1b6567cc51bdf2de1152883c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/f5b21019686a339de6cd8f94b4c9b4b3e28b590c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3896f6f9450e36e5e89cdd7d1f8d6ba2d87efd7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/9d798997026fc43cac7e2243b85a7fb2320481e1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4438b1a7848a7c571122ba618aa1304514aabee6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_c21d818cfb8a1b5ddfba3fd545663898d96d874a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="066a08f849960141289e8d19f65d260e97119781">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c39d221fa239f4e4a731601636be84cf35c0d53a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/5054afdfac4cd7d664dad99eb36774ed0c3fb354/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_7315a711298e6f27a0cd927a3086d9f8084d9196.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/7e0af948b3c565b1fb9bd5686a076a572da153d2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="74ac7cbcf0de4a88e59612dc3a9e3f9e71acb4ca">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_8a0477a5e48239a3bb64e57bf8919eb6ba9b2c52.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/66be586724df32f5903b3def6ec48b5d595a5533/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2d18dea4fd74d71af6e62bbf9831c52a7556db9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/245a41cfc79f6ccff7fa897acfc87f384cb169ab/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bfda09f3b1cd7dbe01959a15a4fb3f73a31230b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/5054afdfac4cd7d664dad99eb36774ed0c3fb354/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7fd91ec2730fdaa82906aad32a3f3d3e574bae56">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7315a711298e6f27a0cd927a3086d9f8084d9196/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/a10ff4bdbedb07d6af15bca07188a99a0b005788/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b4071308df41033b6e890419acbf97a5f5526415.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/2a5e4185b6eb3fbe2b13b198e75825bb745c527b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b543d8af6c01b1009973f3c013237425b17e1687.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/8dfbb969675a57b068f41abbf10db4f64ee62120/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_073161bf0513a4988a8c77f4866943dad1e1b416.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/bd2e587c0fa7c04683647aaff8a5f9c002247c22/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b4671be3d1288bf4e5f527cd33e42909fbe4ecc6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7940ebcb07c2fe48a4d32abd1c2eda3856dbb4a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/09033db8312fe4b0243ea6aad0aaddd78fec956d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cef85cfc7df40e29fbea58844dd4c1e7d0b15542">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_61a72aa178fa26fa20ddb01e938cb42cd79f9617.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/755f15dc46122d2931b4908e8c876f3d109a60ec/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b8b7b07946f064a2588cd26258a0c639b0c4f3bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/a10ff4bdbedb07d6af15bca07188a99a0b005788/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b4071308df41033b6e890419acbf97a5f5526415/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/c6c333791709eb7dafd6d8ea666eb95dcf418db7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_121bda0b2e6a8f9daad4e34a608d99f429583c88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/8dfbb969675a57b068f41abbf10db4f64ee62120/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_073161bf0513a4988a8c77f4866943dad1e1b416/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/f5b21019686a339de6cd8f94b4c9b4b3e28b590c/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_b477f7a95e29e299402278cb3a0ab2be1b438c6d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/7289816410cb0d3ec65214dc523548a7d51acd31/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf97731a40639c1319148e1d5a4337bdb1567558/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/c2ddaddcf6ddc997aa4821ede0954775d650ba00/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a7a04d6b7c01e569a285fa627cf64f5b05295906">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_a771bc308146589da2a5f7a56d5ebc9139481889.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/6a75e4d7f398b643d629ab6c7aa1c9b68e4e8505/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="20a3c4e355150c15c13dd58045d43ad0c717d916">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68c8d349ecaf89bfe524923bdf767f82550acb4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/bd2e587c0fa7c04683647aaff8a5f9c002247c22/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b4671be3d1288bf4e5f527cd33e42909fbe4ecc6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_7940ebcb07c2fe48a4d32abd1c2eda3856dbb4a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/7289816410cb0d3ec65214dc523548a7d51acd31/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_bf97731a40639c1319148e1d5a4337bdb1567558.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/cf63da82c4cf72d62b513125f943d3a52f090339/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6a6052bab9a4e6ebbcbb40ee0420f67de2cf477a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/6a75e4d7f398b643d629ab6c7aa1c9b68e4e8505/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="20a3c4e355150c15c13dd58045d43ad0c717d916">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_68c8d349ecaf89bfe524923bdf767f82550acb4a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/a6b77f289d109e30ee4dbdaa850cd97f66438767/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_4aebd7e9573949f19427dc92e85869ce4673a7b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/ebc891ec0559f438242df26beeecbdb24051750a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7bdf1276d864c78d58e371642b1e6b87c2724c83/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/e0d7654377040cc1a25bb040ae05b263010608be/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_9d7f0be81cdb3a5168fd77c5464d938175619a8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/ebc891ec0559f438242df26beeecbdb24051750a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c81df6bd515398ebe45089b0b16c55752a131f6a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_7bdf1276d864c78d58e371642b1e6b87c2724c83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/8b9601534d28109431bcfb7e4ef69b876ece6fea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_659be43cd59e1dff740fc2e1fc9359d6109fd93b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/a6b77f289d109e30ee4dbdaa850cd97f66438767/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4aebd7e9573949f19427dc92e85869ce4673a7b6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/8b9601534d28109431bcfb7e4ef69b876ece6fea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_659be43cd59e1dff740fc2e1fc9359d6109fd93b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/e0d7654377040cc1a25bb040ae05b263010608be/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="15e59454416c6341bd3ed2533b585cd340682dd1">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d7f0be81cdb3a5168fd77c5464d938175619a8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/c2ddaddcf6ddc997aa4821ede0954775d650ba00/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a7a04d6b7c01e569a285fa627cf64f5b05295906">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a771bc308146589da2a5f7a56d5ebc9139481889/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/b35745f5b963683834253e4e58128daa120f24b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="289cad663c288ce965463cb9ece8b35cc7de0fac">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_be6d863cbe5dc8f6f48e1133b94b8353c395cc90.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-integration/1.3/5de0c73fef18917cd85d0ab70bb23818685e4dfd/hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/hamcrest-integration-1.3_6220a082f03b463122a83af1b42cb1a8e558982b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/junit-4.12_da3f4c1f908669e41c9e2f80f6d89046f59ec4cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/b35745f5b963683834253e4e58128daa120f24b1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="289cad663c288ce965463cb9ece8b35cc7de0fac">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be6d863cbe5dc8f6f48e1133b94b8353c395cc90/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/da15c2fc90f89fefa579812eb2dac60a84732625/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6992aa99b0c5d38a3477b356d84ca8fcee029d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/hamcrest-library-1.3_23b7c405ba3e8f9768e8610b9be8613710697ecf/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/da15c2fc90f89fefa579812eb2dac60a84732625/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b6992aa99b0c5d38a3477b356d84ca8fcee029d3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/26c94d94859d0a82476d6f50311756fbb342c8c9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_18f56e7a423b150910c9ad49b2efc4945fbfc782/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/86f82e6f2ee8ac9e206335b2fcdded6d6445cac6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a972970c8beddb69c198f61f3fc55f0606a7dfe3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f19fdb15f188df9efa8acf0464efa46067664f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/26c94d94859d0a82476d6f50311756fbb342c8c9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f47ede9561595584dca71104baa0fecb36dda87">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_18f56e7a423b150910c9ad49b2efc4945fbfc782.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/hamcrest-core-1.3_6d0089a6b5a85290ed8a613681010bce70386e9a/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/86f82e6f2ee8ac9e206335b2fcdded6d6445cac6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a972970c8beddb69c198f61f3fc55f0606a7dfe3">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_8f19fdb15f188df9efa8acf0464efa46067664f9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/64607a261aa4646ba9e508be164835f45df46303/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a1f6de714c3c8b00c0d349a6f06f75a8a147a8b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/cf63da82c4cf72d62b513125f943d3a52f090339/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_6a6052bab9a4e6ebbcbb40ee0420f67de2cf477a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/9b61be50574563bb38eeeabf3a5811f430bf11fe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_422e4fdd0143873f321e8322cea64d17afac1edf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/ccc43b389d71edd32fec407f37999e7ad5dc44a7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b36537b64fcabb5829d55319fa56f7618f9c8b1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/4b16946dd5e3be7389cffaa04adb78a215b32c9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dbbf618ef6087c28106382801cd9a25561ab190b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/66be586724df32f5903b3def6ec48b5d595a5533/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2d18dea4fd74d71af6e62bbf9831c52a7556db9d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/4b16946dd5e3be7389cffaa04adb78a215b32c9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_dbbf618ef6087c28106382801cd9a25561ab190b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/f5b21019686a339de6cd8f94b4c9b4b3e28b590c/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b477f7a95e29e299402278cb3a0ab2be1b438c6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/9b61be50574563bb38eeeabf3a5811f430bf11fe/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_422e4fdd0143873f321e8322cea64d17afac1edf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/ccc43b389d71edd32fec407f37999e7ad5dc44a7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="055eed08c9cff50cac0db69c74c4d9ff7aef3d84">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b36537b64fcabb5829d55319fa56f7618f9c8b1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/7f24a8daec76341b2ae5109b688c17d83d90822f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="266570862e5792ef3c51143a8b8593cf54fac68d">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_ecc4d651296355605a7284afc646d44028169c10.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/da83fe6dc70890302b3f791e55ce492cd15aa846/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3d60814c3c0ec7be06fc4a9d2abce95aecf06a01/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/e6a2d610ff4f305f136a7cc4c038c7e7618830bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d323da8d18c5aebe54058bd71059e0541ec35fe6/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/56ff9a014db46daea9a377c8f1ff5c88f92d276b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_5376c56d63fa0ca098c1f0b59d984f00ef574735.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/7f24a8daec76341b2ae5109b688c17d83d90822f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="266570862e5792ef3c51143a8b8593cf54fac68d">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ecc4d651296355605a7284afc646d44028169c10/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/64607a261aa4646ba9e508be164835f45df46303/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbb3885c40e431cd2b0dc69c0cab2bf6d5da7b43">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_a1f6de714c3c8b00c0d349a6f06f75a8a147a8b2.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/731ddce14504d7b99b68ccc9542d5e66b1abe842/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a382bbced2c1e7aeb535b8d1730828eb2cbbd4f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9c797615631f210502d8c7f7042fa89646cc3345/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/da83fe6dc70890302b3f791e55ce492cd15aa846/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_3d60814c3c0ec7be06fc4a9d2abce95aecf06a01.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/799e78353c946014fcc1adc30d5ee76fcd1b927a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_46413758d09360581ced5433bf206e26d437cd31/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/731ddce14504d7b99b68ccc9542d5e66b1abe842/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_a382bbced2c1e7aeb535b8d1730828eb2cbbd4f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/4ab28782bedba726ca3e42a9e292d64d4b480d2f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0b8e087da59c0b062c33f49a335e59f907086da2">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_b473c5f37c05e34db762534efc1bb150e881cf93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/799e78353c946014fcc1adc30d5ee76fcd1b927a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_46413758d09360581ced5433bf206e26d437cd31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/e6a2d610ff4f305f136a7cc4c038c7e7618830bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3daa7a9c9009fd386872a84c177a76979bdcafd6">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_d323da8d18c5aebe54058bd71059e0541ec35fe6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/f4f7a61b676b02adb22d0135e59f53be98054140/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_57d4604becec66211ee20176fd288bf508fab20c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/335f5576bd237d1b029b7b5f60b362a43172114d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_25a3e93fcf84200d9020360eb67ec64bb3aadd8a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/56ff9a014db46daea9a377c8f1ff5c88f92d276b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5376c56d63fa0ca098c1f0b59d984f00ef574735/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/f4f7a61b676b02adb22d0135e59f53be98054140/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_57d4604becec66211ee20176fd288bf508fab20c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/eaf22a27153472fcd2a5c023c44c25ac58b5b053/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_bc97ba810d8d22cdc25837cf24774c59951094c4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/edac0b8c77b748ed43b8f916cb031b8825023d96/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_abb088b65a1a5d23e2a993f6a90c79ce4101fd75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/5e7830a621a3fee896a1cf8918394cda55dec912/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/classes_1deede14bef3e372fb632ca6eb84aa89ac7fb9e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/17c8f98e7ef69bd083dbd8bdf0d2b60a66a035e9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_c846bcbe28ba83bde255a9ce9690253f3dcf9659.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/17c8f98e7ef69bd083dbd8bdf0d2b60a66a035e9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c846bcbe28ba83bde255a9ce9690253f3dcf9659/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/db6ad830ca0496096dfcc7aefc5dbd08e7576ee5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/classes_6474a17e5e4be4198f7246e5c91c818c9d943e88/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/1842b589343591398ac49e3f699eef2603a35c95/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_ecd4d5933399e39c32d336463ea06059ef25f9de.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/fe2ee4079b77d7e17905c112c9f2b4fad54c1b2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4d751a7723afd90040daf71f6c5bb924cb2a178/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/1842b589343591398ac49e3f699eef2603a35c95/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ecd4d5933399e39c32d336463ea06059ef25f9de/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/fe2ee4079b77d7e17905c112c9f2b4fad54c1b2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_a4d751a7723afd90040daf71f6c5bb924cb2a178.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/bdef1c9967ec82fe7da50946e233331564601519/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/classes_6136afaba5e085b49345697ed7deea23cbb26a80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/eaf22a27153472fcd2a5c023c44c25ac58b5b053/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bc97ba810d8d22cdc25837cf24774c59951094c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MichaelColomb/.android/build-cache/edac0b8c77b748ed43b8f916cb031b8825023d96/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/pre-dexed/debug/classes_abb088b65a1a5d23e2a993f6a90c79ce4101fd75.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/ca405d323edf0586b8f1d9625c9cef748ca6a12d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/classes_b3283092769fe12f42f36afe8929c2857c5f5efa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/javax.inject-1_adc92f27dcd084e584a4bf00e927929f02b7126f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/MichaelColomb/.android/build-cache/cb4c59797bd66a45ec60fb6583332f5330a441c2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="/Users/MichaelColomb/AndroidStudioProjects/ClipScroller/app/build/intermediates/transforms/dex/androidTest/debug/folders/1000/10/classes_26e5f1ce77352c37e6052e8a4cefaab466a73fd7/classes.dex" />
+    </item>
+
+</items>

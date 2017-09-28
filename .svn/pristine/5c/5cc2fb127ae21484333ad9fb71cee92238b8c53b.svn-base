@@ -1,0 +1,296 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.VideoView;
+
+import com.google.android.gms.iid.InstanceID;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * This class defines a RecyclerAdapter. It sets up the recycler view such that
+ * each list item displays the title of the clip and video. Upon clicking the item, the
+ * video will start.
+ */
+public class ClipAdapter extends RecyclerView.Adapter<ClipAdapter.ClipViewHolder> {
+
+    private Context mContext;
+    private DatabaseReference mEntriesReference;
+    private ArrayList<String> clipHashes;
+
+    private Drawable upSelected;
+    private Drawable upUnselected;
+    private Drawable downSelected;
+    private Drawable downUnselected;
+
+    private static final String SELECTED = "selected";
+    private static final String UNSELECTED = "unselected";
+    private static final String LIKES_ADDRESS = "/likes";
+    private static final String TIME_ADDRESS = "/time";
+
+    /**
+     * This constructor is necessary to set up the adapter. Its only function is to call
+     * the constructor of the FirebaseRecyclerAdapter and to store the parent context.
+     * @param ref database reference
+     */
+    private ClipAdapter(Context context, Query ref) {
+        mContext = context;
+
+        upSelected = context.getDrawable(R.drawable.ic_up_selected);
+        upUnselected = context.getDrawable(R.drawable.ic_up_unselected);
+        downSelected = context.getDrawable(R.drawable.ic_down_selected);
+        downUnselected = context.getDrawable(R.drawable.ic_down_unselected);
+
+        this.mEntriesReference = (DatabaseReference) ref;
+
+        clipHashes = new ArrayList();
+
+        loadList();
+    }
+
+    public static ClipAdapter create(Context context, Query ref) {
+        ClipAdapter clipAdapter = new ClipAdapter(context, ref);
+        clipAdapter.loadList();
+        return clipAdapter;
+    }
+
+    private void loadList() {
+        clearCache();
+
+        mEntriesReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<ClipRank> rankedHashes = new ArrayList();
+
+                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
+                    String clipHash = postSnapshot.getKey();
+
+                    DataSnapshot timeSnapshot = postSnapshot.child(TIME_ADDRESS);
+                    long time = timeSnapshot.getValue(long.class);
+
+                    DataSnapshot likeSnapshot = postSnapshot.child(LIKES_ADDRESS);
+                    ClipRank clipRank = ClipRank.create(clipHash, time, likeSnapshot);
+                    rankedHashes.add(clipRank);
+                }
+
+                Collections.sort(rankedHashes);
+                clipHashes.clear();
+
+                for (int i = 0; i < rankedHashes.size(); i++) {
+                    clipHashes.add(rankedHashes.get(i).getHash());
+                }
+
+                notifyItemRangeChanged(0, rankedHashes.size());
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) { }
+        });
+    }
+
+    private void clearCache() {
+        File cacheDir = mContext.getCacheDir();
+        File[] files = cacheDir.listFiles();
+
+        if (files != null) {
+            for (File file : files) {
+                file.delete();
+            }
+        }
+    }
+
+    public ClipViewHolder onCreateViewHolder(ViewGroup viewGroup, int position) {
+        Context context = viewGroup.getContext();
+        int layoutIdForListItem = R.layout.clip_list_item;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        boolean shouldAttachToParentImmediately = false;
+
+        View view = inflater.inflate(layoutIdForListItem, viewGroup,
+                shouldAttachToParentImmediately);
+        ClipViewHolder viewHolder = new ClipViewHolder(view);
+
+        return viewHolder;
+    }
+
+    @Override
+    public void onBindViewHolder(ClipViewHolder viewHolder, int position) {
+        viewHolder.bind(clipHashes.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        return clipHashes.size();
+    }
+
+    /**
+     * This is the holder for clip list items used in the firebase recyler view.
+     */
+    public class ClipViewHolder extends RecyclerView.ViewHolder {
+
+        public View mContainerView;
+        public TextView mTitleView;
+        public VideoView mClipView;
+        public ImageView mUpvote;
+        public ImageView mDownvote;
+        public TextView mVoteCount;
+
+        /**
+         * This constructor uses the overall list item view to instantiate the fields.
+         * @param itemView containing view of the holder
+         */
+        public ClipViewHolder(View itemView) {
+            super(itemView);
+
+            mContainerView = itemView;
+            mTitleView = (TextView) itemView.findViewById(R.id.clip_list_title);
+            mClipView = (VideoView) itemView.findViewById(R.id.clip);
+            mUpvote = (ImageView) itemView.findViewById(R.id.upvote);
+            mDownvote = (ImageView) itemView.findViewById(R.id.downvote);
+            mVoteCount = (TextView) itemView.findViewById(R.id.vote_count);
+        }
+
+        protected void bind(final String referenceId) {
+            mEntriesReference.child(referenceId)
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Clip clip = dataSnapshot.getValue(Clip.class);
+
+                    mTitleView.setText(clip.getTitle());
+                    ClipPlayer.configureVideo(mContainerView.getContext(),
+                            (LinearLayout) mContainerView, clip.getDownloadUrl());
+
+                    mUpvote.setOnClickListener(new voteClicked(ClipViewHolder.this, referenceId));
+                    mDownvote.setOnClickListener(new voteClicked(ClipViewHolder.this, referenceId));
+
+                    mEntriesReference.child(referenceId).child(LIKES_ADDRESS)
+                            .addValueEventListener(new voteManager(ClipViewHolder.this));
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) { }
+            });
+        }
+    }
+
+    private class voteClicked implements View.OnClickListener {
+
+        private ClipViewHolder viewHolder;
+        private String referenceId;
+
+        public voteClicked(ClipViewHolder viewHolder, String referenceId) {
+            this.viewHolder = viewHolder;
+            this.referenceId = referenceId;
+        }
+
+        @Override
+        public void onClick(View v) {
+            if (v.getId() == R.id.upvote) {
+                if (viewHolder.mUpvote.getTag().equals(UNSELECTED)) {
+                    viewHolder.mUpvote.setImageDrawable(upSelected);
+                    viewHolder.mUpvote.setTag(SELECTED);
+                    viewHolder.mDownvote.setImageDrawable(downUnselected);
+                    viewHolder.mDownvote.setTag(UNSELECTED);
+                    vote(true);
+                } else {
+                    viewHolder.mUpvote.setImageDrawable(upUnselected);
+                    viewHolder.mUpvote.setTag(UNSELECTED);
+                    removeVote();
+                }
+            } else if (v.getId() == R.id.downvote) {
+                if (viewHolder.mDownvote.getTag().equals(UNSELECTED)) {
+                    viewHolder.mDownvote.setImageDrawable(downSelected);
+                    viewHolder.mDownvote.setTag(SELECTED);
+                    viewHolder.mUpvote.setImageDrawable(upUnselected);
+                    viewHolder.mUpvote.setTag(UNSELECTED);
+                    vote(false);
+                } else {
+                    viewHolder.mDownvote.setImageDrawable(downUnselected);
+                    viewHolder.mDownvote.setTag(UNSELECTED);
+                    removeVote();
+                }
+            }
+        }
+
+        private void vote(boolean voteDirection) {
+            DatabaseReference likeReference =
+                    mEntriesReference.child(referenceId).child(LIKES_ADDRESS);
+            String instanceId = InstanceID
+                    .getInstance(viewHolder.mContainerView.getContext()).getId();
+
+            Map<String, Object> updatedLikes = new HashMap();
+            updatedLikes.put(instanceId, voteDirection);
+
+            likeReference.updateChildren(updatedLikes);
+        }
+
+        private void removeVote() {
+            DatabaseReference likeReference = mEntriesReference
+                    .child(referenceId).child(LIKES_ADDRESS);
+            String instanceId = InstanceID
+                    .getInstance(viewHolder.mContainerView.getContext()).getId();
+
+            likeReference.child(instanceId).removeValue();
+        }
+    }
+
+    private class voteManager implements ValueEventListener {
+
+        private ClipViewHolder mViewHolder;
+
+        public voteManager(ClipViewHolder viewHolder) {
+            mViewHolder = viewHolder;
+        }
+
+        @Override
+        public void onDataChange(DataSnapshot dataSnapshot) {
+            String instanceId = InstanceID
+                    .getInstance(mViewHolder.mContainerView.getContext()).getId();
+            int likeCount = VoteUtilities.getVoteCount(dataSnapshot);
+
+            mViewHolder.mVoteCount.setText(String.valueOf(likeCount));
+
+            int voteDirection = VoteUtilities.getVoteDirection(dataSnapshot, instanceId);
+
+            if (voteDirection == 1) {
+                mViewHolder.mUpvote.setImageDrawable(upSelected);
+                mViewHolder.mDownvote.setImageDrawable(downUnselected);
+                mViewHolder.mUpvote.setTag(SELECTED);
+                mViewHolder.mDownvote.setTag(UNSELECTED);
+            } else if (voteDirection == -1) {
+                mViewHolder.mDownvote.setImageDrawable(downSelected);
+                mViewHolder.mUpvote.setImageDrawable(upUnselected);
+                mViewHolder.mDownvote.setTag(SELECTED);
+                mViewHolder.mUpvote.setTag(UNSELECTED);
+            } else {
+                mViewHolder.mDownvote.setImageDrawable(downUnselected);
+                mViewHolder.mUpvote.setImageDrawable(upUnselected);
+                mViewHolder.mDownvote.setTag(SELECTED);
+                mViewHolder.mUpvote.setTag(UNSELECTED);
+            }
+        }
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) { }
+    }
+}
+
+
+

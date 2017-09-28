@@ -1,0 +1,84 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.content.Context;
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.Query;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * This class defines a FirebaseRecyclerAdapter. It sets up the recycler view such that
+ * each list item displays the title of the clip and video. Upon clicking the item, the
+ * video will start.
+ */
+public class ClipAdapter extends FirebaseRecyclerAdapter<Clip, ClipAdapter.ClipViewHolder> {
+
+    /**
+     * This constructor is necessary to set up the adapter. Its only function is to call
+     * the constructor of the FirebaseRecyclerAdapter and to store the parent context.
+     * @param modelClass class to parse stored data into
+     * @param modelLayout id of list item layout
+     * @param viewHolderClass class of view holder
+     * @param ref database reference
+     */
+    public ClipAdapter(Class<Clip> modelClass, int modelLayout,
+                       Class<ClipViewHolder> viewHolderClass, Query ref) {
+        super(modelClass, modelLayout, viewHolderClass, ref);
+    }
+
+    /**
+     * This function populates the view holder for the recycler view item. It fetches
+     * the holder's corresponding video from Firebase Storage. It sets an OnClickListener
+     * on the holder so that the user can play a video by clicking on it.
+     * @param viewHolder for the corresponding recycler view item
+     * @param clip that contains the title and url of the necessary data
+     * @param position in the recycler view (int)
+     */
+    @Override
+    protected void populateViewHolder(final ClipViewHolder viewHolder,
+                                      Clip clip, int position) {
+        Context context = viewHolder.mContainerView.getContext();
+        viewHolder.mTitleView.setText(clip.getTitle());
+
+        ClipPlayer.configureVideo(context, viewHolder.mClip, clip.getDownloadUrl());
+    }
+
+    /**
+     * This is the holder for clip list items used in the firebase recyler view.
+     */
+    public static class ClipViewHolder extends RecyclerView.ViewHolder {
+
+        public View mContainerView;
+        public TextView mTitleView;
+        public VideoView mClip;
+
+        /**
+         * This constructor uses the overall list item view to instantiate the fields.
+         * @param itemView containing view of the holder
+         */
+        public ClipViewHolder(View itemView) {
+            super(itemView);
+            mContainerView = itemView;
+            mTitleView = (TextView) itemView.findViewById(R.id.clip_list_title);
+            mClip = (VideoView) itemView.findViewById(R.id.clip);
+        }
+    }
+}
+
+
+

@@ -1,0 +1,154 @@
+package com.example.michaelcolomb.clipscroller;
+
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+import android.widget.VideoView;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * Created by MichaelColomb on 4/21/17.
+ */
+
+public class ClipPlayer {
+
+    private static final int CLICK_ACTION_THRESHHOLD = 200;
+    protected static final String TEMP_VIDEO_NAME = "tempVideo";
+    protected static final String MP4_FORMAT = "mp4";
+
+    /**
+     * progress bar: http://stackoverflow.com/questions/7731354/how-to-use-a-seekbar-in-android-
+     * as-a-seekbar-as-well-as-a-progressbar-simultaneo
+     * @param context
+     * @param layout
+     * @param downloadUrl
+     */
+    public static void configureVideo(final Context context,
+                                      final LinearLayout layout,
+                                      String downloadUrl) {
+
+        final File localFile;
+        final VideoView clipView = (VideoView) layout.findViewById(R.id.clip);
+        final ProgressBar progressView = (ProgressBar) layout.findViewById(R.id.progress);
+        final ImageView playButton = (ImageView) layout.findViewById(R.id.play_button);
+
+        try {
+            localFile = File.createTempFile(TEMP_VIDEO_NAME, MP4_FORMAT);
+        } catch (IOException e) {
+            Toast.makeText(context, context.getString(R.string.failedToFindVideo),
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        StorageReference speciciedVideoRef = FirebaseStorage.getInstance()
+                .getReferenceFromUrl(downloadUrl);
+
+        speciciedVideoRef.getFile(localFile)
+                .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                        clipView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                            @Override
+                            public void onPrepared(MediaPlayer mp) {
+                                playButton.setVisibility(View.VISIBLE);
+                                clipView.setOnTouchListener(
+                                        new ClipTouchListener(progressView, playButton));
+                            }
+                        });
+                        clipView.setVideoURI(Uri.parse(localFile.getPath()));
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                Toast.makeText(context, context.getString(R.string.failedToRetrieveVideo) +
+                        "\n" + exception.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    public static class ClipTouchListener implements View.OnTouchListener {
+
+        private static long lastTouchDown = 0;
+        private ProgressBar progressBar;
+        private ImageView playButton;
+
+        public ClipTouchListener (ProgressBar progressBar, ImageView playButton) {
+            this.progressBar = progressBar;
+            this.playButton = playButton;
+        }
+
+        @Override
+        public boolean onTouch(View clipView, MotionEvent event) {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                lastTouchDown = System.currentTimeMillis();
+            } else if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (System.currentTimeMillis() - lastTouchDown < CLICK_ACTION_THRESHHOLD) {
+                    playPauseVideo((VideoView) clipView);
+                }
+            }
+
+            return true;
+        }
+
+        /**
+         * This helper function starts a video playing on the mediaController.
+         *
+         * @param videoView view to play video on
+         */
+        private void playPauseVideo(VideoView videoView) {
+
+            if (videoView.isPlaying()) {
+                videoView.pause();
+                playButton.setVisibility(View.VISIBLE);
+            } else {
+                videoView.requestFocus();
+                videoView.start();
+                configureProgress(progressBar, videoView);
+                playButton.setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+
+    public static void configureProgress(ProgressBar progressView, VideoView clipView) {
+        progressView.setMax(clipView.getDuration());
+        progressView.postDelayed(new updateProgress(progressView, clipView), 100);
+    }
+
+    private static class updateProgress implements Runnable {
+
+        private ProgressBar mProgressView;
+        private VideoView mClipView;
+
+        public updateProgress(ProgressBar progressView, VideoView clipView) {
+            mProgressView = progressView;
+            mClipView = clipView;
+        }
+
+        @Override
+        public void run () {
+            int position = mClipView.getCurrentPosition();
+            mProgressView.setProgress(position);
+
+            if (mClipView.isPlaying())
+                mProgressView.postDelayed(this, 100);
+
+        }
+    }
+
+}

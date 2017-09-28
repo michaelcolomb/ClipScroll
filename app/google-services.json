@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": #PROJECT_NUM,
+    "firebase_url": #PROJECT_URL,
+    "project_id": #PROJECT_ID,
+    "storage_bucket": #STORAGE
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829442503223:android:b09e7596f351ca98",
+        "android_client_info": {
+          "package_name": "com.example.michaelcolomb.clipscroller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": #CLIENT_ID
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.michaelcolomb.clipscroller",
+            "certificate_hash": #CERT_HASH
+          }
+        },
+        {
+          "client_id": #CLIENT_ID,
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": #API_KEY
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": #CLIENT_ID,
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

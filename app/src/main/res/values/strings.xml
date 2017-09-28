@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ClipScroller</string>
+    <string name="primaryKey">ab58554da1e848cea393de4d3bfedc4e</string>
+    <string name="deniedPermissions">Permissions Not Granted</string>
+    <string name="pickVideo">Select a Video</string>
+    <string name="failedToProcessVideo">Failed to Process the Selected Video</string>
+    <string name="failedToFindVideo">Failed to Locate a Video</string>
+    <string name="failedToRetrieveVideo">Failed to Retrieve a Video from the Database</string>
+    <string name="emptyTitleOnSubmit">Title cannot be empty</string>
+    <string name="successfulUpload">Uploaded</string>
+    <string name="trendingMessage">Trending</string>
+    <string name="notTrendingMessage">Recent</string>
+</resources>
